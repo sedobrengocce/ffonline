@@ -1,0 +1,23 @@
+%ffo_loginContainer
+  display: flex
+  justify-content: center
+
+.ffo_loginContainerH
+  @extend %ffo_loginContainer
+  flex-flow: row nowrap
+  width: 100%
+  background-color: lightgrey
+
+.ffo_loginContainerV
+  @extend %ffo_loginContainer
+  height: 100vh
+  flex-flow: column nowrap
+
+md-content
+  background-color: white !important
+
+.ffo_inputIcon
+  line-height: 1.45 !important
+
+.ffo_inputIconContainer
+  text-align: center

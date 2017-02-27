@@ -1,0 +1,23 @@
+div.ffo_loginContainerH
+    div.ffo_loginContainerV
+        div
+            md-card
+                md-card-title
+                    md-card-title-text
+                        h2 FF ONLINE MANAGER
+                md-card-content
+                    md-content.md-no-momentum
+                        div(layout='row')
+                            md-input-container.md-block(flex='80')
+                                label Username
+                                input(ng-model='alc.username',type='text', ng-required='true')
+                            md-input-container.md-block.ffo_inputIconContainer(flex='20')
+                                i.material-icons.ffo_inputIcon perm_identity
+                        div(layout='row')
+                            md-input-container.md-block(flex='80')
+                                label Password
+                                input(ng-model='alc.password',type='password', ng-required='true')
+                            md-input-container.md-block.ffo_inputIconContainer(flex='20')
+                                i.material-icons.ffo_inputIcon remove_red_eye
+                        md-card-action(layout='row' layout-align='end center')
+                            md-button(ng-click='alc.login();') LogIn

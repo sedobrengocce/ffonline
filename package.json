@@ -1,0 +1,62 @@
+{
+  "name": "ffonline",
+  "version": "0.0.1",
+  "description": "ffo webApp",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sedobrengocce/ffonline.git"
+  },
+  "license":"MIT",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha test/*.js",
+    "watch": "gulp watch",
+    "prestart": "npm run test",
+    "fast-start": "node ./bin/www",
+    "compile": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-browserify": "latest",
+    "grunt-contrib-pug": "latest",
+    "babelify": "latest",
+    "babel-preset-es2015": "latest",
+    "factor-bundle": "latest",
+    "minifyify": "latest",
+    "mocha": "latest",
+    "gulp": "latest",
+    "gulp-mocha": "latest",
+    "assert": "latest",
+    "superagent": "latest",
+    "karma": "latest",
+    "karma-chai": "latest",
+    "karma-chrome-launcher": "latest",
+    "karma-mocha": "latest"
+  },
+  "dependencies": {
+    "bcrypt": "latest",
+    "jwt-simple": "latest",
+    "passport": "latest",
+    "passport-jwt": "latest",
+    "passport-facebook": "latest",
+    "passport-twitter": "latest",
+    "passport-google-oauth": "latest",
+    "cookie-parser": "latest",
+    "debug": "latest",
+    "pug": "latest",
+    "morgan": "latest",
+    "node-sass-middleware": "latest",
+    "serve-favicon": "latest",
+    "body-parser": "latest",
+    "mongoose": "latest",
+    "express": "latest",
+    "http-status": "latest",
+    "wagner-core": "latest",
+    "underscore": "latest",
+    "angular": "~1.5.2",
+    "angular-material": "latest",
+    "angular-ui-router": "latest",
+    "jquery": "latest",
+    "material-components-web": "latest"
+  }
+}
