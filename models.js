@@ -16,13 +16,15 @@ module.exports = function (wagner) {
     const coach = mongoose.model('coach', schema.coach);
     const race = mongoose.model('race', schema.race);
     const team = mongoose.model('team', schema.team);
+    const user = mongoose.model('user', schema.user)
 
     const models = {
         Skill: skill,
         Player: player,
         Coach: coach,
         Race: race,
-        Team: team
+        Team: team,
+        User: user
     };
 
     //noinspection JSCheckFunctionSignatures

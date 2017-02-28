@@ -16,6 +16,39 @@ app.use(api.skill(wagner));
 
 app.use(api.player(wagner));
 
+app.use(api.oauth(wagner));
+
+describe('API - Login', function () {
+    let server;
+
+    before(function (done) {
+        server = app.listen(7357);
+        done();
+    });
+
+    after( function(){
+        server.close();
+    });
+
+    it('Wrong User Name', function (done) {
+        const url = URL + '/oauth/login';
+        superagent.post(url).send({user:'test'}).end(function (err, res) {
+            assert.ifError(err);
+            let result;
+            assert.doesNotThrow(function () {
+                result = JSON.parse(res.text);
+            });
+            //noinspection JSUnusedAssignment
+            assert.ok(result);
+            //noinspection JSUnusedAssignment
+            assert.equal(result.success, false);
+            //noinspection JSUnusedAssignment
+            assert.equal(result.msg, 'Authentication failed. User not found.');
+            done();
+        })
+    })
+});
+
 describe('API - Skill', function () {
 
     let server;

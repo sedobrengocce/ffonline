@@ -7,8 +7,9 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const wagner = require('wagner-core');
-const api = require('./api');
+const passoprt = require('passport');
 
+const api = require('./api');
 const routes = require('./routes');
 
 const app = express();
@@ -33,11 +34,14 @@ app.use(require('node-sass-middleware')({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(passoprt.initialize());
+
 app.use('/', routes.index);
 app.use('/admin', routes.admin);
 app.use('/users', routes.user);
 app.use('/api/v1', api.skill(wagner));
 app.use('/api/v1', api.player(wagner));
+app.use('/api/v1', api.oauth(wagner));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

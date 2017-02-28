@@ -55,7 +55,7 @@
     "underscore": "latest",
     "angular": "~1.5.2",
     "angular-material": "latest",
-    "angular-ui-router": "latest",
+    "angular-route": "latest",
     "jquery": "latest",
     "material-components-web": "latest"
   }

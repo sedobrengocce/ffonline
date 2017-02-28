@@ -10,6 +10,9 @@ let srcFile = [];
 let distFile = [];
 let distMinFile = [];
 
+let pugFile = [];
+let htmlFile = [];
+
 baseFileName.forEach((name) => {
     srcFile.push('./src/' + name + '.js');
     distFile.push('./public/js/' + name + '.js');
@@ -24,7 +27,8 @@ function gruntFunction(grunt) {
                     pretty: true
                 },
                 files: {
-                    "./public/template/adminlogin.html": "./pugs/adminlogin.pug"
+                    "./public/template/adminlogin.html": "./pugs/adminlogin.pug",
+                    "./public/template/adminmain.html": "./pugs/adminmain.pug"
                 }
             }
         },
