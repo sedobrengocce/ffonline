@@ -5,6 +5,7 @@ import routeConfig from './app.route';
 import adminLoginCtrl from "./shared/controller/adminLoginCtrl";
 import adminMainCtrl from "./shared/controller/adminMainCtrl";
 import authService from "./shared/service/authService";
+import manageSkill from "./components/directive/manage-Skill"
 
 const modules = [ngRoute, ngMaterial];
 
@@ -24,5 +25,6 @@ angular.module('ffonline', modules)
     })
     .config(routeConfig)
     .service('$ff_authService', authService)
+    .directive('manage-Skill', manageSkill)
     .controller('adminLoginCtrl', adminLoginCtrl)
     .controller('adminMainCtrl', adminMainCtrl);

@@ -1,6 +1,6 @@
 'use strict';
 
-export default function authService() {
+export default function authService($q, $http) {
     const LOCAL_TOKEN_KEY = 'yourTokenKey';
     let isAuthenticated = false;
     let authToken;

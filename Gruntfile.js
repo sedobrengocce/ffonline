@@ -1,17 +1,27 @@
 'use strict';
 
+const fs = require('fs');
+
 const baseFileName = [
-    'app',
-    'app.route',
-    'shared/controller/adminLoginCtrl'
+    'app'
 ];
 
 let srcFile = [];
 let distFile = [];
 let distMinFile = [];
 
-let pugFile = [];
 let htmlFile = [];
+
+let pugFile = fs.readdirSync('./pugs');
+
+pugFile.forEach((file) => {
+    htmlFile.push(file.substr(0,file.length - 3) + 'html')
+});
+
+let files = {};
+
+for(let i = 0; i < pugFile.length; ++i)
+    files['./public/template/' + htmlFile[i]] = './pugs/' + pugFile[i];
 
 baseFileName.forEach((name) => {
     srcFile.push('./src/' + name + '.js');
@@ -26,10 +36,7 @@ function gruntFunction(grunt) {
                 options: {
                     pretty: true
                 },
-                files: {
-                    "./public/template/adminlogin.html": "./pugs/adminlogin.pug",
-                    "./public/template/adminmain.html": "./pugs/adminmain.pug"
-                }
+                files: files
             }
         },
         browserify: {

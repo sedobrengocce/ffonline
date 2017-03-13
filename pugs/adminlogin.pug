@@ -1,5 +1,5 @@
-div.ffo_loginContainerH
-    div.ffo_loginContainerV
+div.ffo-loginContainerH
+    div.ffo-loginContainerV
         div
             md-card
                 md-card-title
@@ -11,13 +11,14 @@ div.ffo_loginContainerH
                             md-input-container.md-block(flex='80')
                                 label Username
                                 input(ng-model='alc.username',type='text', ng-required='true')
-                            md-input-container.md-block.ffo_inputIconContainer(flex='20')
-                                i.material-icons.ffo_inputIcon perm_identity
+                            md-input-container.md-block.ffo-inputIconContainer(flex='20')
+                                i.material-icons.ffo-inputIcon perm_identity
                         div(layout='row')
                             md-input-container.md-block(flex='80')
                                 label Password
                                 input(ng-model='alc.password',type='password', ng-required='true')
-                            md-input-container.md-block.ffo_inputIconContainer(flex='20')
-                                i.material-icons.ffo_inputIcon remove_red_eye
+                            md-input-container.md-block.ffo-inputIconContainer(flex='20')
+                                i.material-icons.ffo-inputIcon remove_red_eye
                         md-card-action(layout='row' layout-align='end center')
+                            md-button(ng-click='alc.register();') Register
                             md-button(ng-click='alc.login();') LogIn

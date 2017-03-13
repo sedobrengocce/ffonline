@@ -10,7 +10,7 @@ const api = require('../api');
 
 let app = express();
 
-let models = require('../models')(wagner);
+let models = require('../models')(wagner, 'test');
 
 app.use(api.skill(wagner));
 

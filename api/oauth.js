@@ -30,6 +30,7 @@ module.exports = function (wagner) {
                             // return the information including token as JSON
                             res.json({success: true, token: 'JWT ' + token});
                         } else {
+                            console.log('fail');
                             res.send({success: false, msg: 'Authentication failed. Wrong user or password.'});
                         }
                     });
@@ -44,8 +45,8 @@ module.exports = function (wagner) {
                 res.json({success: false, msg: 'Please pass name and password.'});
             } else {
                 let newUser = new User({
-                    user: req.body.name,
-                    pass: req.body.password
+                    name: req.body.user,
+                    password: req.body.pass
                 });
                 // save the user
                 newUser.save(function (err) {
