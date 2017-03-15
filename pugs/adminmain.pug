@@ -1,30 +1,36 @@
+include ../pugmixin/material-icon.pug
+
 section(layout='row' flex)
-    md-toolbar
+    md-toolbar(md-theme='ffom')
         div.md-toolbar-tools
-            i.material-icons(ng-click='amc.leftMenu()') menu
-            p &nbsp; FFOnline Manager
-    md-sidenav.md-sidenav-left.ffo-sidenav(md-component-id='left' md-disable-backdrop md-whiteframe='4')
-        md-content(layout-margin)
+            md-button.md-icon-button(ng-click='amc.leftMenu()', aria-label='Menu')
+                +addIcon('menu')
+            p &nbsp; FFOnline Manager &nbsp; {{amc.selectedItem}}
+    md-sidenav.md-sidenav-left.ffo-sidenav(md-component-id='left', md-disable-backdrop md-whiteframe='4', md-theme='ffom')
+        md-content.ffo-white(layout-margin)
             md-list(flex)
-                md-list-item(ng-click='selectedItem = "Skill"')
+                md-list-item(ng-click='selectedItem = "Dashboard"')
+                    p Home
+                md-list-item(ng-click='selectedItem = "Manage Skill"')
                     p Manage Skill
-                md-list-item(ng-click='selectedItem = "Race"')
+                md-list-item(ng-click='selectedItem = "Manage Race"')
                     p Manage Races
-                md-list-item(ng-click='selectedItem = "Player"')
+                md-list-item(ng-click='selectedItem = "Manage Player"')
                     p Manage Player
-                md-list-item(ng-click='selectedItem = "User"')
+                md-list-item(ng-click='selectedItem = "Manage User"')
                     p Manage Users
-                md-list-item(ng-click='selectedItem = "Match"')
+                md-list-item(ng-click='selectedItem = "Manage Match"')
                     p Manage Match
-                md-list-item(ng-click='selectedItem = "League"')
+                md-list-item(ng-click='selectedItem = "Manage League"')
                     p Manage League
                 md-list-item(ng-click='amc.logout()')
                     p Logout
 ffom-container(ng-switch='selectedItem')
-    manageSkill(ng-switch-when='Skill')
-    manageRace(ng-switch-when='Race')
-    managePlayer(ng-switch-when='Player')
-    manageUser(ng-switch-when='User')
-    manageMatch(ng-switch-when='Match')
-    manageLeague(ng-switch-when='League')
+    admin-dashboard(ng-switch-default)
+    manage-skill(ng-switch-when='Manage Skill')
+    manage-race(ng-switch-when='Manage Race')
+    manage-player(ng-switch-when='Manage Player')
+    manage-user(ng-switch-when='Manage User')
+    manage-match(ng-switch-when='Manage Match')
+    manage-league(ng-switch-when='Manage League')
 

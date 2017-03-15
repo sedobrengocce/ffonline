@@ -1,0 +1,15 @@
+include ../pugmixin/material-icon.pug
+
+md-content.md-padding.ffo-fullheight
+    p UNDER CONSTRUCTION
+    md-fab-speed-dial.md-fab-bottom-right(md-direction='up', ng-class='amc.speedDial')
+        md-fab-trigger(aria-label='New Card')
+            md-button.md-fab(md-theme='ffom', aria-label='New Card')
+                +addIcon('add')
+        md-fab-actions
+            md-button.md-fab.md-mini(aria-label='test', md-theme='ffom' ng-click='amc.onlineUsers()')
+                +addIcon('build',12)
+            md-button.md-fab.md-mini(aria-label='test', md-theme='ffom' ng-click='amc.activeMatches()')
+                +addIcon('accessibility',12)
+            md-button.md-fab.md-mini(aria-label='test', md-theme='ffom')
+                +addIcon('games',12)

@@ -1,0 +1,9 @@
+mixin addIcon(name, size)
+    if size == 12
+        md-icon.s12(md-svg-src='images/icons/ic_' + name + '_24px.svg')
+    else if size == 36
+        md-icon.s36(md-svg-src='images/icons/ic_' + name + '_24px.svg')
+    else if size == 48
+        md-icon.s48(md-svg-src='images/icons/ic_' + name + '_24px.svg')
+    else
+        md-icon(md-svg-src='images/icons/ic_'+name+'_24px.svg')
