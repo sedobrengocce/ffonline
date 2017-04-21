@@ -1,0 +1,24 @@
+include ../pugmixin/material-icon
+
+md-dialog(aria-label='Join Request')
+    form(ng-cloak)
+        md-toolbar
+            div.md-toolbar-tools
+                h2 Join Request
+                span(flex)
+                md-button.md-icon-button(ng-click="jRq.close()")
+                    +addIcon('close')
+        md-dialog-content
+            div.md-dialog-content
+                div(layout='row')
+                    img.md-avatar(ng-src='images/team2/{{jRq.team.race}}' alt='{{jRq.team.race}}')
+                    md-progress-circular(md-mode="determinate" value="{{jRq.time}}" flex-offset='50')
+                div.md-list-item-text(layout='column')
+                    h2.ffo-nomargin {{jRq.team.name}} - {{jRq.team.race}} &nbsp;
+                        small
+                            small
+                                small tv: {{jRq.team.tv}}
+                    p {{jRq.username}}
+                md-dialog-actions(layout="row")
+                    md-button(ng-click="jRq.yes()") Accept
+                    md-button(ng-click="jRq.close()") Refuse

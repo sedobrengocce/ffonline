@@ -15,7 +15,7 @@ export default function adminLoginCtrl($http, $location, $ff_authService){
             pass: ctrl.password
         };
         $ff_authService.login(data).then((res) => {
-            $location.path('/main')
+            $location.path('/admin/main')
         }, (err) => {
             console.log(err);
         });

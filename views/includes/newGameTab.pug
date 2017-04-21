@@ -1,0 +1,30 @@
+md-tab(label='New')
+    md-content(layout-padding)
+        h1.md-display-2 Create New Game
+        form(name='newGameForm')
+            div(layout='row')
+                md-input-container.md-block(flex)
+                    label Username
+                    input(ng-model='game.user.name' disabled)
+                md-input-container.md-block(flex)
+                    label Team
+                    md-select(ng-model='game.teamSelected' required)
+                        md-option(ng-repeat='team in game.user.teams' value='{{team.id}}') {{team.name}}
+            div(layout='row')
+                md-input-container.md-block(flex)
+                    label GameName
+                    input(ng-model='game.newGame.name' required)
+                md-input-container.md-block(flex)
+                    label Type
+                    md-select(ng-model='game.newGame.type' required)
+                        md-option(ng-repeat='type in game.types' value='{{type.id}}') {{type.name}}
+            div(layout='row')
+                md-input-container.md-block
+                    md-switch.md-primary(ng-model='game.invite' aria-label='Invite Friend')
+                md-input-container.md-block(flex)
+                    label Invite Friend
+                    md-select(ng-model='game.friendSelected' ng-disabled='!game.invite')
+                        md-option(ng-repeat='friend in game.user.friends' value='{{friend.id}}' ng-disabled='!friend.online') {{friend.name}}
+            div
+                md-button(ng-click='game.createNew()') Create
+

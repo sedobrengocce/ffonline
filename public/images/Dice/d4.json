@@ -1,0 +1,30 @@
+{
+"frames": {
+	"d4_1.jpg": {
+		"frame": {"x":0, "y":88, "w":88, "h":84},
+		"spriteSourceSize": {"x":0,"y":0,"w":88,"h":84},
+		"sourceSize": {"w":88,"h":84}
+	},
+	"d4_2.jpg": {
+		"frame": {"x":0, "y":0, "w":89, "h":87},
+		"spriteSourceSize": {"x":0,"y":0,"w":89,"h":87},
+		"sourceSize": {"w":89,"h":87}
+	},
+	"d4_3.jpg": {
+		"frame": {"x":90, "y":0, "w":87, "h":85},
+		"spriteSourceSize": {"x":0,"y":0,"w":87,"h":85},
+		"sourceSize": {"w":87,"h":85}
+	},
+	"d4_4.jpg": {
+		"frame": {"x":89, "y":88, "w":88, "h":86},
+		"spriteSourceSize": {"x":0,"y":0,"w":88,"h":86},
+		"sourceSize": {"w":88,"h":86}
+	}
+
+},
+"meta": {
+	"image": "d4.png",
+	"size": {"w": 178, "h": 175},
+	"scale": "1"
+}
+}

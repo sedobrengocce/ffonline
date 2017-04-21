@@ -1,0 +1,21 @@
+include ../pugmixin/material-icon
+
+md-dialog(aria-label='Join Game')
+    form(ng-cloak)
+        md-toolbar
+            div.md-toolbar-tools
+                h2 Join Game
+                span(flex)
+                md-button.md-icon-button(ng-click="jDC.close()")
+                    +addIcon('close')
+        md-dialog-content
+            div.md-dialog-content
+                h2 Select Team
+                div(layout='row')
+                    md-input-container.md-block(flex)
+                        label Team
+                        md-select(ng-model='jDC.teamSelected' required)
+                            md-option(ng-repeat='team in jDC.user.teams' value='{{team.id}}' ng-disabled='jDC.checkDifference(team.id)') {{team.name}}
+                md-dialog-actions(layout="row")
+                    md-button(ng-click="jDC.ask()") Join
+                    md-button(ng-click="jDC.close()") Cancel

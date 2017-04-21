@@ -1,6 +1,6 @@
 export default function manageRace(){
     return {
         restrict: "E",
-        templateUrl: "template/manage-race.html"
+        templateUrl: "template/manage-race"
     }
 }

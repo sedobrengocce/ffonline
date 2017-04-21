@@ -1,0 +1,15 @@
+md-tab(label='Join')
+    md-content
+        h1.md-display-2 Join Open Game
+        md-list
+            md-subheader Open Games
+            md-list-item.md-3-line(ng-repeat='(gid, g) in game.openGames' ng-click='game.join($event, gid, g.data.home.team.tv)')
+                img.md-avatar(ng-src='images/team2/{{g.data.home.team.race}}' alt='{{g.data.home.team.race}}')
+                div.md-list-item-text(layout='column')
+                    p {{g.data.name}}
+                    h2.ffo-nomargin {{g.data.home.team.name}} - {{g.data.home.team.race}} &nbsp;
+                        small
+                            small
+                                small tv: {{g.data.home.team.tv}}
+                    p {{g.data.home.username}}
+

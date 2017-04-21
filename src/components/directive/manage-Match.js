@@ -1,6 +1,6 @@
 export default function manageMatch(){
     return {
         restrict: "E",
-        templateUrl: "template/manage-match.html"
+        templateUrl: "template/manage-match"
     }
 }

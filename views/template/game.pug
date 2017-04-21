@@ -1,0 +1,14 @@
+include ../pugmixin/material-icon
+
+div.ffo-loginContainerH
+    div.ffo-loginContainerV
+        div
+            md-card.ffo-card600px
+                md-card-title
+                    md-card-title-text
+                        span.md-headline GAME
+                md-card-content
+                    md-tabs(md-dynamic-height md-border-bottom)
+                        include ../includes/newGameTab
+                        include ../includes/joinGameTab
+                        include ../includes/spectateGameTab

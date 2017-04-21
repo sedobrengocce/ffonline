@@ -1,0 +1,130 @@
+{
+"frames": {
+	"goblin1_000.png": {
+		"frame": {"x":120, "y":57, "w":20, "h":24},
+		"spriteSourceSize": {"x":5,"y":4,"w":30,"h":30},
+		"sourceSize": {"w":30,"h":30}
+	},
+	"goblin1an_000.png": {
+		"frame": {"x":120, "y":133, "w":19, "h":25},
+		"spriteSourceSize": {"x":5,"y":3,"w":30,"h":30},
+		"sourceSize": {"w":30,"h":30}
+	},
+	"goblin1b_000.png": {
+		"frame": {"x":120, "y":82, "w":20, "h":24},
+		"spriteSourceSize": {"x":5,"y":4,"w":30,"h":30},
+		"sourceSize": {"w":30,"h":30}
+	},
+	"goblin1ban_000.png": {
+		"frame": {"x":120, "y":107, "w":19, "h":25},
+		"spriteSourceSize": {"x":6,"y":3,"w":30,"h":30},
+		"sourceSize": {"w":30,"h":30}
+	},
+	"oblackorc2_000.png": {
+		"frame": {"x":38, "y":111, "w":31, "h":32},
+		"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	},
+	"oblackorc2an_000.png": {
+		"frame": {"x":68, "y":0, "w":26, "h":32},
+		"spriteSourceSize": {"x":3,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	},
+	"oblackorc2b_000.png": {
+		"frame": {"x":38, "y":78, "w":31, "h":32},
+		"spriteSourceSize": {"x":1,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	},
+	"oblackorc2ban_000.png": {
+		"frame": {"x":70, "y":61, "w":26, "h":32},
+		"spriteSourceSize": {"x":3,"y":0,"w":32,"h":32},
+		"sourceSize": {"w":32,"h":32}
+	},
+	"oblitzer1_000.png": {
+		"frame": {"x":40, "y":0, "w":27, "h":27},
+		"spriteSourceSize": {"x":0,"y":1,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"oblitzer1an_000.png": {
+		"frame": {"x":118, "y":0, "w":22, "h":27},
+		"spriteSourceSize": {"x":3,"y":1,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"oblitzer1b_000.png": {
+		"frame": {"x":40, "y":28, "w":27, "h":27},
+		"spriteSourceSize": {"x":1,"y":1,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"oblitzer1ban_000.png": {
+		"frame": {"x":95, "y":0, "w":22, "h":27},
+		"spriteSourceSize": {"x":3,"y":1,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"olineman1_000.png": {
+		"frame": {"x":68, "y":33, "w":26, "h":27},
+		"spriteSourceSize": {"x":1,"y":1,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"olineman1an_000.png": {
+		"frame": {"x":95, "y":28, "w":22, "h":27},
+		"spriteSourceSize": {"x":3,"y":1,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"olineman1b_000.png": {
+		"frame": {"x":70, "y":94, "w":26, "h":27},
+		"spriteSourceSize": {"x":1,"y":1,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"olineman1ban_000.png": {
+		"frame": {"x":97, "y":85, "w":22, "h":27},
+		"spriteSourceSize": {"x":3,"y":1,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"othrower2_000.png": {
+		"frame": {"x":70, "y":122, "w":24, "h":28},
+		"spriteSourceSize": {"x":2,"y":0,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"othrower2an_000.png": {
+		"frame": {"x":97, "y":56, "w":22, "h":28},
+		"spriteSourceSize": {"x":3,"y":0,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"othrower2b_000.png": {
+		"frame": {"x":95, "y":122, "w":24, "h":28},
+		"spriteSourceSize": {"x":2,"y":0,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"othrower2ban_000.png": {
+		"frame": {"x":120, "y":28, "w":22, "h":28},
+		"spriteSourceSize": {"x":3,"y":0,"w":28,"h":28},
+		"sourceSize": {"w":28,"h":28}
+	},
+	"troll1_000.png": {
+		"frame": {"x":0, "y":39, "w":39, "h":38},
+		"spriteSourceSize": {"x":1,"y":0,"w":40,"h":38},
+		"sourceSize": {"w":40,"h":38}
+	},
+	"troll1an_000.png": {
+		"frame": {"x":0, "y":78, "w":37, "h":38},
+		"spriteSourceSize": {"x":1,"y":0,"w":38,"h":38},
+		"sourceSize": {"w":38,"h":38}
+	},
+	"troll1b_000.png": {
+		"frame": {"x":0, "y":0, "w":39, "h":38},
+		"spriteSourceSize": {"x":0,"y":0,"w":40,"h":38},
+		"sourceSize": {"w":40,"h":38}
+	},
+	"troll1ban_000.png": {
+		"frame": {"x":0, "y":117, "w":37, "h":38},
+		"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
+		"sourceSize": {"w":38,"h":38}
+	}
+
+},
+"meta": {
+	"image": "orc.png",
+	"size": {"w": 143, "h": 159},
+	"scale": "1"
+}
+}

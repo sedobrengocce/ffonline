@@ -1,6 +1,6 @@
 export default function manageLeague(){
     return {
         restrict: "E",
-        templateUrl: "template/manage-league.html"
+        templateUrl: "template/manage-league"
     }
 }

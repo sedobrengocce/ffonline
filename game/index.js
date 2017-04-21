@@ -1,0 +1,1 @@
+exports.storeData = require('./storedData');

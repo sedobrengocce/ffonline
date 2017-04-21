@@ -37,8 +37,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(passoprt.initialize());
 
 app.use('/', routes.index);
-app.use('/admin', routes.admin);
-app.use('/users', routes.user);
+app.use('/template', routes.template);
+app.use('/modals', routes.modals);
 app.use('/api/v1', api.skill(wagner));
 app.use('/api/v1', api.player(wagner));
 app.use('/api/v1', api.oauth(wagner));

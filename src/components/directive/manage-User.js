@@ -1,6 +1,6 @@
 export default function manageSkill(){
     return {
         restrict: "E",
-        templateUrl: "template/manage-user.html"
+        templateUrl: "template/manage-user"
     }
 }

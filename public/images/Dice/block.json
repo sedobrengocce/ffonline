@@ -1,0 +1,35 @@
+{
+"frames": {
+	"bd_bothdown.png": {
+		"frame": {"x":36, "y":36, "w":35, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":35,"h":35},
+		"sourceSize": {"w":35,"h":35}
+	},
+	"bd_pow.png": {
+		"frame": {"x":0, "y":36, "w":35, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":35,"h":35},
+		"sourceSize": {"w":35,"h":35}
+	},
+	"bd_push.png": {
+		"frame": {"x":0, "y":0, "w":35, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":35,"h":35},
+		"sourceSize": {"w":35,"h":35}
+	},
+	"bd_pushpow.png": {
+		"frame": {"x":0, "y":72, "w":35, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":35,"h":35},
+		"sourceSize": {"w":35,"h":35}
+	},
+	"bd_skull.png": {
+		"frame": {"x":36, "y":0, "w":35, "h":35},
+		"spriteSourceSize": {"x":0,"y":0,"w":35,"h":35},
+		"sourceSize": {"w":35,"h":35}
+	}
+
+},
+"meta": {
+	"image": "block.png",
+	"size": {"w": 72, "h": 108},
+	"scale": "1"
+}
+}

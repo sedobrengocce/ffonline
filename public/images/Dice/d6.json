@@ -1,0 +1,40 @@
+{
+"frames": {
+	"d6_1.jpg": {
+		"frame": {"x":129, "y":0, "w":125, "h":114},
+		"spriteSourceSize": {"x":0,"y":0,"w":125,"h":114},
+		"sourceSize": {"w":125,"h":114}
+	},
+	"d6_2.jpg": {
+		"frame": {"x":125, "y":232, "w":123, "h":111},
+		"spriteSourceSize": {"x":0,"y":0,"w":123,"h":111},
+		"sourceSize": {"w":123,"h":111}
+	},
+	"d6_3.jpg": {
+		"frame": {"x":0, "y":232, "w":124, "h":112},
+		"spriteSourceSize": {"x":0,"y":0,"w":124,"h":112},
+		"sourceSize": {"w":124,"h":112}
+	},
+	"d6_4.jpg": {
+		"frame": {"x":128, "y":116, "w":127, "h":115},
+		"spriteSourceSize": {"x":0,"y":0,"w":127,"h":115},
+		"sourceSize": {"w":127,"h":115}
+	},
+	"d6_5.jpg": {
+		"frame": {"x":0, "y":116, "w":127, "h":115},
+		"spriteSourceSize": {"x":0,"y":0,"w":127,"h":115},
+		"sourceSize": {"w":127,"h":115}
+	},
+	"d6_6.jpg": {
+		"frame": {"x":0, "y":0, "w":128, "h":115},
+		"spriteSourceSize": {"x":0,"y":0,"w":128,"h":115},
+		"sourceSize": {"w":128,"h":115}
+	}
+
+},
+"meta": {
+	"image": "d6.png",
+	"size": {"w": 256, "h": 345},
+	"scale": "1"
+}
+}
